@@ -9,13 +9,8 @@ os.system('cls')
 ticker = 'GOOGL'
 
 file_name = f'{ticker}.csv'
-path = f"{os.path.dirname(os.path.realpath(__file__))}\\"
-prgm_path = f'{os.path.dirname(os.path.realpath(__file__))}\\'
-print(f'------\n{path}{file_name}\n------')
-
-file_name = f'{ticker}.csv'
 file_path = f'{os.path.dirname(os.path.realpath(__file__))}\\{file_name}'
-
+print(f'------\n{file_path}\n------')
 
 period1 = int(time.mktime(datetime.datetime(2020, 1, 1, 23, 59).timetuple()))
 period2 = int(time.mktime(datetime.datetime(2020, 12, 31, 23, 59).timetuple()))
